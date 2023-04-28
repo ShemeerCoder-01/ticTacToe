@@ -1,0 +1,85 @@
+/*  your css code here. If applicable */
+body{
+	overflow-x: hidden;
+	background-color:rgb(100, 245, 204) ;
+}
+#form{
+	width: 300px;
+	padding: 10px;
+	position: relative;
+	left: 30rem;
+	top: 10rem;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+.head{
+	margin-left: 3.5rem;
+}
+.btn{
+	padding:10px;
+	width:200px;
+	margin-left: 18px;
+	background-color: dodgerblue;
+	color: white;
+	border: none;
+	border-radius:7px;
+}
+.gameBoard{
+	display:grid;
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows:100px 100px 100px;
+}
+.box{
+	border:1px solid black;
+	background:#FFC0CB;
+}
+#gamePage{
+	display:none;
+	width: 50rem;
+	position:relative;
+	left:30rem;
+	top: 5rem;
+}
+#message{
+	margin-left:10px;
+	padding:5px;
+}
+input:focus{
+	outline: none;
+}
+
+#modal{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0, 0,0.5);
+}
+#inner-cont{
+	width: 21rem;
+	height: 10rem;
+	text-align: center;
+	background-color: white;
+	border: 1px solid navy;
+	border-radius: 10px;
+	position: relative;
+	left: 30rem;
+	top: 12rem;
+}
+#buttons{
+	display: flex;
+	gap: 6rem;
+}
+#back,#restart{
+	padding:10px;
+	width:100px;
+	/* margin-left: 18px; */
+	margin-top: 20px;
+	background-color: whitesmoke;
+	color: black;
+	border: none;
+	border-radius:7px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+
+		<div id="form">
+			<h1><i><b>TIC TAC TOE</b></i></h1>
+			<label>Player 1</label>
+			<input id="player-1" type="text" placeholder="Enter Name" required /><br><br>
+			<label>Player 2</label>
+			<input id="player-2" type="text" placeholder="Enter Name" required /><br><br>
+			<button class="btn" onclick="getData()" type="submit">Start Game</button>
+		</div>
+		<div id="gamePage">
+			<h1><i><b class="head">TIC TAC TOE</b></i></h1>
+			<h3 id="message"></h3>
+			<div class="gameBoard">
+				<div id="1" onclick="changeData(id)" class="box"></div>
+				<div id="2" onclick="changeData(id)" class="box"></div>
+				<div id="3" onclick="changeData(id)" class="box"></div>
+				<div id="4" onclick="changeData(id)" class="box"></div>
+				<div id="5" onclick="changeData(id)" class="box"></div>
+				<div id="6" onclick="changeData(id)" class="box"></div>
+				<div id="7" onclick="changeData(id)" class="box"></div>
+				<div id="8" onclick="changeData(id)" class="box"></div>
+				<div id="9" onclick="changeData(id)" class="box"></div>
+			</div>
+			<div id="buttons">
+				<button id="back">Back</button>
+				<button id="restart" onclick="playAgain()">Restart</button>
+			</div>
+
+		</div>
+
+	</div>
+	<div id="modal">
+		<div id="inner-cont">
+			<h4>Please click the button to play again</h4><br><br>
+			<button class="btn" onclick="playAgain()">Play Again</button>
+		</div>
+
+	</div>
+	<!-- the entire body must be written by student -->
+	<script type="text/javascript" src="./script.js">
+	</script>
+
+</body>
+
+</html>
